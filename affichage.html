@@ -34,16 +34,11 @@
 
         <h2>📝 Nouvelle publication</h2>
 
-        <input
-            type="text"
-            id="title"
-            placeholder="Titre de la publication"
-        >
+        <input type="text" id="author" placeholder="Indiquez votre nom/prénom" required>
 
-        <textarea
-            id="content"
-            placeholder="Écris ton message..."
-        ></textarea>
+<input type="text" id="title" placeholder="Titre de la publication" required>
+
+<textarea id="content" placeholder="Votre message..." required></textarea>
 
         <div class="form-buttons">
             <button onclick="addPost()">Publier</button>
