@@ -242,3 +242,89 @@ display: block;
 margin-top: 12px;
 color: #9ca3af;
 }
+
+/* =========================
+   EMPLOI DU TEMPS
+========================= */
+
+.navigation-semaine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.navigation-semaine button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.semaine-titre {
+    text-align: center;
+    margin: 25px 0;
+    text-transform: capitalize;
+}
+
+.jour-emploi {
+    margin-bottom: 25px;
+}
+
+.jour-titre {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.cours {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.cours-heure {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.cours-matiere {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cours-salle {
+    opacity: 0.8;
+}
+
+.aucun-cours {
+    opacity: 0.7;
+    font-style: italic;
+}
+
+/* =========================
+   ÉTAT DES COURS
+========================= */
+
+/* 🟢 Cours en ce moment */
+.cours-en-cours {
+    background: rgba(34, 197, 94, 0.30);
+    border: 2px solid #22c55e;
+}
+
+/* 🟠 Prochain cours */
+.cours-prochain {
+    background: rgba(249, 115, 22, 0.30);
+    border: 2px solid #f97316;
+}
+
+/* 🔴 Cours terminé */
+.cours-passe {
+    background: rgba(239, 68, 68, 0.30);
+    border: 2px solid #ef4444;
+}
