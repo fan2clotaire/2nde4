@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Panneau d'affichage • 2nde4</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+    <h1>📢 Panneau d'affichage</h1>
+    <p>Les informations importantes de la 2nde4</p>
+</header>
+
+<main>
+
+    <a href="index.html" class="back-button">
+        ← Retour à l'accueil
+    </a>
+
+    <button class="add-button" onclick="openForm()">
+        ➕ Ajouter une publication
+    </button>
+
+    <section id="form-container" class="form-container">
+
+        <h2>📝 Nouvelle publication</h2>
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Titre de la publication"
+        >
+
+        <textarea
+            id="content"
+            placeholder="Écris ton message..."
+        ></textarea>
+
+        <div class="form-buttons">
+            <button onclick="addPost()">Publier</button>
+            <button onclick="closeForm()">Annuler</button>
+        </div>
+
+    </section>
+
+    <section id="posts" class="panel"></section>
+
+</main>
+
+<footer>
+    <p>2nde4 • Panneau d'affichage</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

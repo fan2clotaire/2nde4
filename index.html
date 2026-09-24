@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>2nde4</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+    <h1>🏫 2nde4</h1>
+    <p>Bienvenue sur le panneau d'affichage de la classe</p>
+</header>
+
+<main>
+
+    <section class="welcome">
+        <h2>👋 Bienvenue !</h2>
+        <p>
+            Retrouvez ici toutes les informations importantes
+            concernant la classe de 2nde4.
+        </p>
+    </section>
+
+    <section class="panel">
+        <h2>📢 Panneau d'affichage</h2>
+
+        <div class="announcement">
+            <h3>📌 Bienvenue sur le site !</h3>
+            <p>
+                Le site de la 2nde4 est maintenant en ligne.
+            </p>
+        </div>
+
+        <div class="announcement">
+            <h3>📚 Informations</h3>
+            <p>
+                Les nouvelles annonces seront ajoutées ici.
+            </p>
+        </div>
+    </section>
+
+    <section class="buttons">
+
+        <a href="affichage.html" class="menu-button">
+    📢 Panneau d'affichage
+</a>
+
+        <button onclick="showMessage('📅 Emploi du temps')">
+            📅 Emploi du temps
+        </button>
+
+        <button onclick="showMessage('📝 Devoirs et contrôles')">
+            📝 Devoirs
+        </button>
+
+        <button onclick="showMessage('📚 Ressources')">
+            📚 Ressources
+        </button>
+
+        <button onclick="showMessage('💬 Forum')">
+            💬 Forum
+        </button>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>2nde4 • Panneau d'affichage</p>
+    <p id="date"></p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
